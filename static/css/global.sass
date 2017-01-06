@@ -1,0 +1,104 @@
+$font-stack:    Helvetica, sans-serif
+$primary-color: #10244F
+
+$cta-button-height: 80px
+$cta-button-width: 150px
+
+$font: 'sustained-font'
+
+@font-face
+    font-family: $font
+    src: url('../fonts/TsukuBRdGothic-Bold.ttf')
+
+/* Nav bar */
+
+nav#main-nav
+    padding: 8px 0px
+    background-color: transparent
+
+nav#main-nav div#navbar-header
+
+nav#main-nav ul
+    display: table
+    width: 100%
+
+nav#main-nav ul li
+    margin-left: 0px
+    text-transform: lowercase
+    display: table-cell
+    width: 24%
+    text-align: center
+
+
+nav#main-nav ul li a
+    color: $primary-color
+    font-family: $font
+
+nav#main-nav ul li a:hover
+    font-weight: bold
+
+
+@media (max-width: 767px)
+    nav#main-nav ul li
+        display: block
+        width: 100%
+
+/* */
+
+/* Splash */
+
+div#splash-panel
+    background: url('../images/sustained_background.png')
+
+div#splash-container
+    background-color: transparent
+
+div#splash-logo-container
+    text-align: center
+
+div#splash-logo-container img
+    max-width: 870px
+
+div#splash-video-container
+    text-align: center
+    margin: 32px
+
+div#splash-video-container video
+    height: 640px
+    width: 480px
+
+div#splash-cta-container
+    margin: 16px
+    padding-bottom: 32px
+
+div#splash-cta-container p
+    margin-bottom: 0px
+
+div#splash-cta-container.left, div#splash-cta-container.right
+    margin: 16px
+
+div#splash-cta-container > div
+    text-align: center
+    width: 340px
+    margin: 0 auto
+
+div#splash-cta-container button
+    height: $cta-button-height
+    width: $cta-button-width
+
+/* */
+
+/**  Utility */
+
+.clear
+    clear: both
+
+
+.left
+    float: left
+
+
+.right
+    float: right
+
+/* */
