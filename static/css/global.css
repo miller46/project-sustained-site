@@ -3,7 +3,8 @@
   src: url("../fonts/TsukuBRdGothic-Bold.ttf"); }
 body {
   font-family: "Tsukushi B Round Gothic";
-  color: #10244F; }
+  color: #10244F;
+  text-transform: lowercase; }
 
 /* Main */
 div#main-container {
@@ -80,8 +81,8 @@ div#splash-cta-container > div {
 div#splash-cta-container button {
   height: 80px;
   width: 120px;
-  padding-left: 22px;
-  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-bottom: 16px;
   -webkit-transform: rotate(-10deg);
   margin-top: -20px; }
 
@@ -125,15 +126,37 @@ div.info-bullet p {
   div.info-bullet:nth-child(2) {
     margin-left: 32px; }
 
+  div.info-bullet:nth-child(2) p:nth-child(1) {
+    margin-top: 16px;
+    margin-bottom: 0; }
+
   div.info-bullet:nth-child(3) {
     margin-left: 64px; }
 
   div.info-bullet:nth-child(4) {
     margin-left: 96px; } }
-p.info-bullet-number {
+div.info-bullet-number {
   width: 64px;
   height: 64px;
-  margin: 32px; }
+  margin: 32px;
+  margin-top: 24px;
+  border-radius: 50%;
+  background-color: #8EC4F9;
+  overflow: hidden; }
+
+div.info-bullet-number > div {
+  width: 52px;
+  height: 52px;
+  margin: 6px;
+  border-radius: 50%;
+  background-color: #10244F; }
+
+div.info-bullet-number p {
+  color: #8EC4F9;
+  font-size: 28px;
+  width: 52px;
+  line-height: 52px;
+  text-align: center; }
 
 p#info-bullet-subtext {
   font-size: 14px;
@@ -145,6 +168,19 @@ p.display-stack {
 
 @media (max-width: 720px) {
   line-height: 50px; }
+div#info-sub-row button {
+  height: 120px;
+  width: 350px;
+  background-size: 70%; }
+
+div#info-sub-row > div.right {
+  margin-left: -80px; }
+
+p#info-sub-row-label {
+  margin-right: 120px;
+  line-height: 10px;
+  margin-bottom: 0; }
+
 /* */
 /* Menu */
 div#menu-container {
@@ -207,18 +243,24 @@ div#signup-container {
 
 /* */
 /** Core */
+.btn-small {
+  background: url("../images/button_small_background.png") !important; }
+
+.btn-small.active {
+  background: url("../images/button_small_background.png") !important; }
+
 .btn-sustained {
-  background: url("../images/button_small_background.png");
+  background: url("../images/button_background.png");
   background-position: center;
   background-repeat: no-repeat;
   color: #FFFFFF;
-  -webkit-transform: rotate(-10deg); }
+  -webkit-transform: rotate(-5deg); }
 
 .btn-sustained:hover {
   color: #8EC4F9; }
 
 .btn-sustained:active {
-  background: url("../images/button_small_background.png");
+  background: url("../images/button_background.png");
   background-position: top -4px; }
 
 /* */
@@ -232,8 +274,11 @@ div#signup-container {
 .right {
   float: right; }
 
-.uppercase {
+.text-uppercase {
   text-transform: uppercase; }
+
+.text-notransform {
+  text-transform: none; }
 
 /* */
 /* Clearfix */

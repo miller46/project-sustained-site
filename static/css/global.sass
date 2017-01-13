@@ -12,6 +12,8 @@ $cta-button-width: 120px
 
 $info-bullet-height: 100px
 
+$info-bullet-number-inner-radius: 52px
+
 $menu-order-item-line-height: 10px
 
 $font: 'sustained-font'
@@ -23,6 +25,7 @@ $font: 'sustained-font'
 body
     font-family: "Tsukushi B Round Gothic"
     color: $primary-color
+    text-transform: lowercase
 
 /* Main */
 
@@ -105,11 +108,10 @@ div#splash-cta-container > div
     margin: 0 auto
 
 div#splash-cta-container button
-
     height: $cta-button-height
     width: $cta-button-width
-    padding-left: 22px
-    padding-bottom: 12px
+    padding-left: 24px
+    padding-bottom: 16px
     -webkit-transform: rotate(-10deg)
     margin-top: -20px
 
@@ -135,10 +137,10 @@ div#info-bullets-container
 
 p#info-header-first
     color: #F41B1B
-    font-size: 16px
+    font-size: 18px
 
 p#info-header-second
-    font-size: 18px
+    font-size: 20px
     margin-left: 32px
 
 div.info-bullet
@@ -148,7 +150,7 @@ div.info-bullet
 
 div.info-bullet p
     font-weight: bold
-    font-size: 16px
+    font-size: 22px
     display: table-cell
     vertical-align: middle
     line-height: $info-bullet-height
@@ -157,16 +159,38 @@ div.info-bullet p
     div.info-bullet:nth-child(2)
         margin-left: 32px
 
+    div.info-bullet:nth-child(2) p:nth-child(1)
+        margin-top: 16px
+        margin-bottom: 0
+
     div.info-bullet:nth-child(3)
         margin-left: 64px
 
     div.info-bullet:nth-child(4)
         margin-left: 96px
 
-p.info-bullet-number
+div.info-bullet-number
     width: 64px
     height: 64px
     margin: 32px
+    margin-top: 24px
+    border-radius: 50%
+    background-color: $accent-color
+    overflow: hidden
+
+div.info-bullet-number > div
+    width: $info-bullet-number-inner-radius
+    height: $info-bullet-number-inner-radius
+    margin: 6px
+    border-radius: 50%
+    background-color: $primary-color
+
+div.info-bullet-number p
+    color: $accent-color
+    font-size: 28px
+    width: $info-bullet-number-inner-radius
+    line-height: $info-bullet-number-inner-radius
+    text-align: center
 
 p#info-bullet-subtext
     font-size: 14px
@@ -178,6 +202,19 @@ p.display-stack
 
 @media (max-width: 720px)
     line-height: 50px
+
+div#info-sub-row button
+    height: 120px
+    width: 350px
+    background-size: 70%
+
+div#info-sub-row > div.right
+    margin-left: -80px
+
+p#info-sub-row-label
+    margin-right: 120px
+    line-height: 10px
+    margin-bottom: 0
 
 /* */
 
@@ -249,19 +286,24 @@ div#signup-container
 
 /** Core **/
 
+.btn-small
+    background: url('../images/button_small_background.png') !important
+
+.btn-small.active
+    background: url('../images/button_small_background.png') !important
+
 .btn-sustained
-    background: url('../images/button_small_background.png')
+    background: url('../images/button_background.png')
     background-position: center
     background-repeat: no-repeat
     color: #FFFFFF
-    -webkit-transform: rotate(-10deg)
-
+    -webkit-transform: rotate(-5deg)
 
 .btn-sustained:hover
     color: $accent-color
 
 .btn-sustained:active
-    background: url('../images/button_small_background.png')
+    background: url('../images/button_background.png')
     background-position: top -4px
 
 /* */
@@ -279,8 +321,11 @@ div#signup-container
 .right
     float: right
 
-.uppercase
+.text-uppercase
     text-transform: uppercase
+
+.text-notransform
+    text-transform: none
 /* */
 
 /* Clearfix */
