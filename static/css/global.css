@@ -1,6 +1,10 @@
 @font-face {
   font-family: "sustained-font";
   src: url("../fonts/TsukuBRdGothic-Bold.ttf"); }
+body {
+  font-family: "Tsukushi B Round Gothic";
+  color: #10244F; }
+
 /* Main */
 div#main-container {
   width: 100%;
@@ -10,7 +14,7 @@ div#main-container {
 /* */
 /* Nav bar */
 nav#main-nav {
-  padding: 8px 0px;
+  padding: 8px 0;
   background-color: transparent; }
 
 nav#main-nav ul {
@@ -18,7 +22,7 @@ nav#main-nav ul {
   width: 100%; }
 
 nav#main-nav ul li {
-  margin-left: 0px;
+  margin-left: 0;
   text-transform: lowercase;
   display: table-cell;
   width: 24%;
@@ -26,7 +30,8 @@ nav#main-nav ul li {
 
 nav#main-nav ul li a {
   color: #10244F;
-  font-family: "sustained-font"; }
+  font-size: 20px;
+  font-weight: 200; }
 
 nav#main-nav ul li a:hover {
   font-weight: bold; }
@@ -45,7 +50,8 @@ div#splash-logo-container {
   text-align: center; }
 
 div#splash-logo-container img {
-  max-width: 100%; }
+  max-width: 100%;
+  height: 240px; }
 
 div#splash-video-container {
   text-align: center;
@@ -73,7 +79,18 @@ div#splash-cta-container > div {
 
 div#splash-cta-container button {
   height: 80px;
-  width: 150px; }
+  width: 120px;
+  padding-left: 22px;
+  padding-bottom: 12px;
+  -webkit-transform: rotate(-10deg);
+  margin-top: -20px; }
+
+div#splash-cta-container button:active {
+  margin-top: -18px; }
+
+p.see-more-label {
+  font-family: "kohinoor devanagari";
+  color: #444; }
 
 /* */
 /* Info */
@@ -130,22 +147,25 @@ p.display-stack {
   line-height: 50px; }
 /* */
 /* Menu */
+div#menu-container {
+  width: 100%; }
+
 div#menu-order-container {
   background: url("../images/menu_background.png");
-  border: 1px solid #EEEEEE;
+  border: 1px solid #CCCCCC;
   padding-left: 24px;
   max-width: 100%;
   width: 500px; }
 
 div#menu-order-container > div {
-  border-left: 1px solid #EEEEEE; }
+  border-left: 1px solid #CCCCCC; }
 
 p#menu-title {
   text-transform: uppercase;
   font-size: 32px;
   color: #8EC4F9;
   text-align: center;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #CCCCCC;
   margin-bottom: 6px; }
 
 p.menu-header {
@@ -157,7 +177,7 @@ p#menu-total {
   font-size: 20px; }
 
 div.menu-row {
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #CCCCCC;
   width: 100%;
   line-height: 10px; }
 
@@ -166,6 +186,40 @@ div.menu-row label {
 
 div.menu-spacer {
   line-height: 10px; }
+
+/* */
+/**  Insta */
+div#insta-container {
+  background: #0F254E;
+  width: 500px;
+  max-width: 100%;
+  padding: 32px;
+  text-align: center;
+  margin: auto; }
+
+/* */
+/** Signup */
+div#signup-container {
+  margin: 32px;
+  height: 400px;
+  text-align: center;
+  padding-top: 150px; }
+
+/* */
+/** Core */
+.btn-sustained {
+  background: url("../images/button_small_background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  -webkit-transform: rotate(-10deg); }
+
+.btn-sustained:hover {
+  color: #8EC4F9; }
+
+.btn-sustained:active {
+  background: url("../images/button_small_background.png");
+  background-position: top -4px; }
 
 /* */
 /**  Utility */

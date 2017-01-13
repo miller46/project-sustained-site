@@ -2,10 +2,13 @@ $font-stack:    Helvetica, sans-serif
 $primary-color: #10244F
 $accent-color: #8EC4F9
 
-$menu-border-color: #EEEEEE
+$menu-border-color: #CCCCCC
+
+$dark-text-color: #444
+
 
 $cta-button-height: 80px
-$cta-button-width: 150px
+$cta-button-width: 120px
 
 $info-bullet-height: 100px
 
@@ -16,6 +19,10 @@ $font: 'sustained-font'
 @font-face
     font-family: $font
     src: url('../fonts/TsukuBRdGothic-Bold.ttf')
+
+body
+    font-family: "Tsukushi B Round Gothic"
+    color: $primary-color
 
 /* Main */
 
@@ -29,7 +36,7 @@ div#main-container
 /* Nav bar */
 
 nav#main-nav
-    padding: 8px 0px
+    padding: 8px 0
     background-color: transparent
 
 nav#main-nav div#navbar-header
@@ -39,20 +46,19 @@ nav#main-nav ul
     width: 100%
 
 nav#main-nav ul li
-    margin-left: 0px
+    margin-left: 0
     text-transform: lowercase
     display: table-cell
     width: 24%
     text-align: center
 
-
 nav#main-nav ul li a
     color: $primary-color
-    font-family: $font
+    font-size: 20px
+    font-weight: 200
 
 nav#main-nav ul li a:hover
     font-weight: bold
-
 
 @media (max-width: 767px)
     nav#main-nav ul li
@@ -63,8 +69,6 @@ nav#main-nav ul li a:hover
 
 /* Splash */
 
-div#splash-panel
-
 div#splash-container
     background-color: transparent
     height: 100vh
@@ -74,6 +78,7 @@ div#splash-logo-container
 
 div#splash-logo-container img
     max-width: 100%
+    height: 240px
 
 div#splash-video-container
     text-align: center
@@ -100,8 +105,21 @@ div#splash-cta-container > div
     margin: 0 auto
 
 div#splash-cta-container button
+
     height: $cta-button-height
     width: $cta-button-width
+    padding-left: 22px
+    padding-bottom: 12px
+    -webkit-transform: rotate(-10deg)
+    margin-top: -20px
+
+div#splash-cta-container button:active
+    margin-top: -18px
+
+p.see-more-label
+    font-family: "kohinoor devanagari"
+    color: $dark-text-color
+
 
 /* */
 
@@ -165,6 +183,9 @@ p.display-stack
 
 /* Menu */
 
+div#menu-container
+    width: 100%
+
 div#menu-order-container
     background: url('../images/menu_background.png')
     border: 1px solid $menu-border-color
@@ -201,6 +222,47 @@ div.menu-row label
 
 div.menu-spacer
     line-height: $menu-order-item-line-height
+
+/* */
+
+/**  Insta */
+
+div#insta-container
+    background: #0F254E
+    width: 500px
+    max-width: 100%
+    padding: 32px
+    text-align: center
+    margin: auto
+
+/* */
+
+/** Signup */
+
+div#signup-container
+    margin: 32px
+    height: 400px
+    text-align: center
+    padding-top: 150px
+
+/* */
+
+/** Core **/
+
+.btn-sustained
+    background: url('../images/button_small_background.png')
+    background-position: center
+    background-repeat: no-repeat
+    color: #FFFFFF
+    -webkit-transform: rotate(-10deg)
+
+
+.btn-sustained:hover
+    color: $accent-color
+
+.btn-sustained:active
+    background: url('../images/button_small_background.png')
+    background-position: top -4px
 
 /* */
 
