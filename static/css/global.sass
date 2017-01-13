@@ -1,14 +1,30 @@
 $font-stack:    Helvetica, sans-serif
 $primary-color: #10244F
+$accent-color: #8EC4F9
+
+$menu-border-color: #EEEEEE
 
 $cta-button-height: 80px
 $cta-button-width: 150px
+
+$info-bullet-height: 100px
+
+$menu-order-item-line-height: 10px
 
 $font: 'sustained-font'
 
 @font-face
     font-family: $font
     src: url('../fonts/TsukuBRdGothic-Bold.ttf')
+
+/* Main */
+
+div#main-container
+    width: 100%
+    padding: 0
+    background: url('../images/sustained_background.png')
+
+/* */
 
 /* Nav bar */
 
@@ -48,24 +64,24 @@ nav#main-nav ul li a:hover
 /* Splash */
 
 div#splash-panel
-    background: url('../images/sustained_background.png')
 
 div#splash-container
     background-color: transparent
+    height: 100vh
 
 div#splash-logo-container
     text-align: center
 
 div#splash-logo-container img
-    max-width: 870px
+    max-width: 100%
 
 div#splash-video-container
     text-align: center
     margin: 32px
 
 div#splash-video-container video
-    height: 640px
     width: 480px
+    max-width: 100%
 
 div#splash-cta-container
     margin: 16px
@@ -80,11 +96,111 @@ div#splash-cta-container.left, div#splash-cta-container.right
 div#splash-cta-container > div
     text-align: center
     width: 340px
+    max-width: 100%
     margin: 0 auto
 
 div#splash-cta-container button
     height: $cta-button-height
     width: $cta-button-width
+
+/* */
+
+
+/* Info */
+
+div#info-container
+    padding: 32px
+    background: #FFFFFF
+
+div#info-bullets-container
+    margin-left: 44px
+
+p#info-header-first
+    color: #F41B1B
+    font-size: 16px
+
+p#info-header-second
+    font-size: 18px
+    margin-left: 32px
+
+div.info-bullet
+    float: left
+    min-height: $info-bullet-height
+    width: 100%
+
+div.info-bullet p
+    font-weight: bold
+    font-size: 16px
+    display: table-cell
+    vertical-align: middle
+    line-height: $info-bullet-height
+
+@media (min-width: 720px)
+    div.info-bullet:nth-child(2)
+        margin-left: 32px
+
+    div.info-bullet:nth-child(3)
+        margin-left: 64px
+
+    div.info-bullet:nth-child(4)
+        margin-left: 96px
+
+p.info-bullet-number
+    width: 64px
+    height: 64px
+    margin: 32px
+
+p#info-bullet-subtext
+    font-size: 14px
+    margin-top: -24px
+
+p.display-stack
+    display: flex !important
+    line-height: 50px !important
+
+@media (max-width: 720px)
+    line-height: 50px
+
+/* */
+
+/* Menu */
+
+div#menu-order-container
+    background: url('../images/menu_background.png')
+    border: 1px solid $menu-border-color
+    padding-left: 24px
+    max-width: 100%
+    width: 500px
+
+div#menu-order-container > div
+    border-left: 1px solid $menu-border-color
+
+p#menu-title
+    text-transform: uppercase
+    font-size: 32px
+    color: $accent-color
+    text-align: center
+    border-bottom: 1px solid $menu-border-color
+    margin-bottom: 6px
+
+p.menu-header
+    clear: both
+    text-transform: none
+    margin-bottom: 1px
+
+p#menu-total
+    font-size: 20px
+
+div.menu-row
+    border-bottom: 1px solid $menu-border-color
+    width: 100%
+    line-height: $menu-order-item-line-height
+
+div.menu-row label
+    margin-bottom: 1px
+
+div.menu-spacer
+    line-height: $menu-order-item-line-height
 
 /* */
 
@@ -100,5 +216,29 @@ div#splash-cta-container button
 
 .right
     float: right
+
+.uppercase
+    text-transform: uppercase
+/* */
+
+/* Clearfix */
+.clearfix:after
+    content: "."
+    display: block
+    clear: both
+    visibility: hidden
+    line-height: 0
+    height: 0
+
+
+.clearfix
+    display: inline-block
+
+html[xmlns] .clearfix
+    display: block
+
+
+* html .clearfix
+    height: 1%
 
 /* */

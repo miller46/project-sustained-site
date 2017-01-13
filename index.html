@@ -16,7 +16,7 @@
 
   <body>
 
-    <div class="container">
+    <div id="main-container" class="container">
 
         <div id="splash-panel">
           <nav id="main-nav" class="navbar navbar-light bg-faded">
@@ -62,12 +62,214 @@
                       </div>
                       <div class="clear"></div>
                   </div>
-              </iv>
-          </div>
+            </div>
+         </div>
         </div>
 
-    </div> <!-- /container -->
+        <div id="info-container" class="clearfix">
+          <div id="info-header-container">
+              <p id="info-header-first">Let us transform your stained or lifeless clothing</p>
+              <p id="info-header-second"class="uppercase">Don't Trash It</p>
+          </div>
 
+          <div id="info-bullets-container">
+              <div class="info-bullet">
+                  <div class="left">
+                      <div class="left">
+                          <p class="info-bullet-number">1</p>
+                      </div>
+                      <div class="left">
+                          <div class="left">
+                              <p>Get your garment to us</p>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <div class="right">
+                      <p>If you live in NYC</p>
+                      <div class="left">
+                          <a href="#request-mailer"><button class="btn btn-primary uppercase">Request Mailer</button></a>
+                      </div>
+                      <div class="right">
+                          <a href="#request-pickup"><button class="btn btn-primary uppercase">Request Pickup</button></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="info-bullet">
+                  <div class="left">
+                      <p class="info-bullet-number">2</p>
+                  </div>
+                  <div class="left">
+                      <p class="display-stack">Fill out the menu below</p>
+                      <p id="info-bullet-subtext" class="display-stack">Your garment details & transformation preference</p>
+                  </div>
+              </div>
+
+              <div class="info-bullet">
+                  <div class="left">
+                      <p class="info-bullet-number">3</p>
+                  </div>
+                  <div class="left">
+                      <p>Purchase, seek a consultant, or gamble on your item</p>
+                  </div>
+              </div>
+
+              <div class="info-bullet">
+                  <div class="left">
+                      <p class="info-bullet-number">4</p>
+                  </div>
+                  <div class="left">
+                      <p>We will send you back your transformed garment</p>
+                  </div>
+              </div>
+          </div>
+        </div> <!-- /info-container -->
+
+        <div id="menu-container">
+            <div class="left">
+                <div>
+                    <button class="uppercase">Gamble</button>
+                    <img src="" height="50px" width="50px" />
+                    <div>
+                        <p>What is true value anyway?</p>
+                        <p>You may luck out</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div id="menu-order-container">
+                    <div><p id="menu-title" class="uppercase">Menu</p></div>
+
+                    <div class="menu-row clearfix">
+                        <div class="left">
+                            <input type="checkbox" data-amount="0" /><label class="menu-item">request a mailer</label>
+                        </div>
+                        <div class="left">
+                            <input type="checkbox" data-amount="0" /><label class="menu-item">schedule a pick up in NYC</label>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-row clearfix menu-spacer">
+
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <div><p class="menu-header">What item are you servicing?</p></div>
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <div class="left">
+                            <input type="checkbox" data-amount="10" /><label class="menu-item">t shirt</label>
+                        </div>
+                        <div class="left">
+                            <input type="checkbox" data-amount="10" /><label class="menu-item">thermal</label>
+                        </div>
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <div class="left">
+                            <input type="checkbox" data-amount="20" /><label class="menu-item">jacket</label>
+                        </div>
+                        <div class="left">
+                            <input type="checkbox" data-amount="20" /><label class="menu-item">blouse</label>
+                        </div>
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <div class="left">
+                            <input type="checkbox" data-amount="30" /><label class="menu-item">sweater</label>
+                        </div>
+                    </div>
+
+                    <div class="menu-row clearfix menu-spacer">
+
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <div><p class="menu-header">What type of fabric?</p></div>
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <input type="checkbox" data-amount="5" /><label class="menu-item">Sytnetic</label>
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <input type="checkbox" data-amount="10" /><label class="menu-item">Cotton</label>
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <input type="checkbox" data-amount="15" /><label class="menu-item">Silk</label>
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <input type="checkbox" data-amount="20" /><label class="menu-item">Wool/cashmere/alpaca</label>
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <input type="checkbox" data-amount="25" /><label class="menu-item">Linen/hemp</label>
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <input type="checkbox" data-amount="30" /><label class="menu-item">Other:</label><input type="text" />
+                    </div>
+
+                    <div class="menu-row clearfix menu-spacer">
+
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <div><p class="menu-header">What service would you like?</p></div>
+                    </div>
+
+
+                    <div class="menu-row clearfix">
+                        <input type="checkbox" data-amount="15" /><label class="menu-item">Rust dye</label>
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <input type="checkbox" data-amount="10" /><label class="menu-item">Or</label>
+                        <input type="checkbox" data-amount="20" /><label class="menu-item">And</label>
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <input type="checkbox" data-amount="25" /><label class="menu-item">Indigo dye</label>
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <input type="checkbox" data-amount="10" /><label class="menu-item">Or</label>
+                        <input type="checkbox" data-amount="20" /><label class="menu-item">And</label>
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <input type="checkbox" data-amount="15" /><label class="menu-item">Embroidery</label>
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <label class="menu-item">How involved:</label>
+                    </div>
+
+                    <div class="menu-row clearfix">
+                        <div class="left">
+                            <button>Purchase</button>
+                        </div>
+                        <div class="right">
+                            <div>
+                                <label class="menu-item">Total:</label>
+                                <p id="menu-total"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-row clearfix">
+
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /menu-container -->
+
+    </div> <!-- /container -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
