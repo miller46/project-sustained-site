@@ -118,7 +118,8 @@ p#info-header-second {
 div.info-bullet {
   float: left;
   min-height: 100px;
-  width: 100%; }
+  width: 100%;
+  margin-left: 16px; }
 
 div.info-bullet p {
   font-weight: bold;
@@ -127,7 +128,7 @@ div.info-bullet p {
   vertical-align: middle;
   line-height: 100px; }
 
-@media (min-width: 720px) {
+@media (min-width: 840px) {
   div.info-bullet:nth-child(2) {
     margin-left: 32px; }
 
@@ -211,7 +212,7 @@ div#menu-gamble-sub-container p {
   font-family: "Heiti SC";
   font-weight: normal; }
 
-div#menu-order-container {
+div#menu-order {
   background: url("../images/menu_background.png");
   border: 1px solid #CCCCCC;
   max-width: 100%;
@@ -220,15 +221,15 @@ div#menu-order-container {
 div#menu-order-button-container {
   position: relative; }
 
-div#menu-order-container button {
+div#menu-order button {
   position: absolute;
   margin-top: -10px;
   border: 0; }
 
 @media (min-width: 500px) {
-  div#menu-order-container {
+  div#menu-order {
     width: 500px; } }
-div#menu-order-container > div:nth-child(1) {
+div#menu-order > div:nth-child(1) {
   border-left: 1px solid #CCCCCC;
   position: absolute;
   left: 32px;
@@ -292,7 +293,7 @@ div.menu-spacer {
   line-height: 10px; }
 
 @media(max-width: 500px) {
-  div#menu-order-container button {
+  div#menu-order button {
     background: url("../images/button_small_background.png") !important;
     background-repeat: no-repeat;
     height: 80px;
@@ -329,21 +330,21 @@ div#insta-images-container {
 
 /* */
 /** Signup */
-div#signup-container {
+div#signup {
   width: 100%;
   margin: 32px;
   text-align: center;
   padding-top: 150px;
   margin-bottom: 128px; }
 
-div#signup-container h3 {
+div#signuph3 {
   margin-bottom: 64px;
   font-size: 60px;
   color: #444;
   font-family: "kohinoor devanagari";
   font-weight: lighter; }
 
-div#signup-container input {
+div#signup input {
   width: 300px;
   padding: 8px;
   border: 4px solid rgba(15, 37, 78, 0.6);
@@ -355,12 +356,14 @@ div#signup-container input {
     width: auto; } }
 /* */
 /** Natural Dye Laboratory ndl */
-div#ndl-container {
+div#natural-dye-laboratory {
   background: url("../images/dye_lab_background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   width: 100%;
   height: 100vh; }
 
-div#ndl-container h2 {
+div#natural-dye-laboratory h2 {
   margin: 16px;
   text-transform: uppercase;
   font-weight: bold; }
@@ -371,11 +374,44 @@ div#ndl-text-container {
   float: right;
   margin-top: 300px;
   padding: 16px;
-  margin-right: 16px; }
+  margin-right: 16px;
+  margin-left: 16px; }
 
 div#ndl-text-container p {
   font-weight: bold;
   margin-bottom: 0; }
+
+/* */
+/** About Us */
+div#about-us {
+  width: 100%;
+  vertical-align: middle; }
+
+div#about-us h1 {
+  text-transform: uppercase;
+  font-size: 38px; }
+
+div#about-us p {
+  font-size: 20px;
+  margin-bottom: 0;
+  text-transform: none; }
+
+div#future-culture-info-container {
+  background: rgba(120, 175, 220, 0.8);
+  padding: 16px;
+  width: 100%; }
+
+div#resource-sharing {
+  text-align: center; }
+
+div#resource-sharing img {
+  max-width: 100%; }
+
+img#future-culture-logo {
+  max-width: 100%;
+  height: 64px;
+  width: 128px;
+  float: right; }
 
 /* */
 /** Core */
