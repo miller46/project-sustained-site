@@ -24,16 +24,16 @@
             <div class="collapse navbar-toggleable-xs" id="navbar-header">
               <ul class="nav navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">About us</a>
+                  <a class="nav-link" href="#about-us">About us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#signup">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Natural Dye Laboratory</a>
+                  <a class="nav-link" href="#natural-dye-laboratory">Natural Dye Laboratory</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Resource Sharing</a>
+                  <a class="nav-link" href="#resource-sharing">Resource Sharing</a>
                 </li>
               </ul>
             </div>
@@ -94,10 +94,10 @@
                       <p id="info-sub-row-label" class="text-notransform right">If you live in NYC</p>
                       <div class="clear"></div>
                       <div class="left">
-                          <a href="#request-mailer"><button class="btn btn-sustained text-uppercase">Request Mailer</button></a>
+                          <a href="#request-mailer"><button class="btn btn-sustained btn-large text-uppercase">Request Mailer</button></a>
                       </div>
                       <div class="right">
-                          <a href="#request-pickup"><button class="btn btn-sustained text-uppercase">Request Pickup</button></a>
+                          <a href="#request-pickup"><button class="btn btn-sustained btn-large text-uppercase">Request Pickup</button></a>
                       </div>
                   </div>
               </div>
@@ -146,179 +146,213 @@
 
         <div id="menu-container" class="clearfix">
             <div class="left">
-                <div>
-                    <button class="text-uppercase">Gamble</button>
-                    <img src="" height="50px" width="50px" />
-                    <div>
-                        <p>What is true value anyway?</p>
-                        <p>You may luck out</p>
+                <div id="menu-gamble-container">
+                    <button class="btn btn-sustained btn-large text-uppercase">Gamble</button>
+                    <div id="menu-gamble-sub-container">
+                        <p class="text-notransform">What is true value anyway?</p>
+                        <p class="text-notransform">You may luck out</p>
                     </div>
                 </div>
             </div>
             <div class="right">
-                <div id="menu-order-container">
-                    <div><p id="menu-title" class="text-uppercase">Menu</p></div>
-
-                    <div class="menu-row clearfix">
-                        <div class="left">
-                            <input type="checkbox" data-amount="0" /><label class="menu-item">request a mailer</label>
-                        </div>
-                        <div class="left">
-                            <input type="checkbox" data-amount="0" /><label class="menu-item">schedule a pick up in NYC</label>
-                        </div>
-                    </div>
-
-
-                    <div class="menu-row clearfix menu-spacer">
+                <div id="menu-order-container" class="clearfix">
+                    <div class="left">
 
                     </div>
 
-                    <div class="menu-row clearfix">
-                        <div><p class="menu-header">What item are you servicing?</p></div>
-                    </div>
+                    <div class="left clearfix">
+                        <div><p id="menu-title" class="text-uppercase">Menu</p></div>
 
-                    <div class="menu-row clearfix">
-                        <div class="left">
-                            <input type="checkbox" data-amount="10" /><label class="menu-item">t shirt</label>
-                        </div>
-                        <div class="left">
-                            <input type="checkbox" data-amount="10" /><label class="menu-item">thermal</label>
-                        </div>
-                    </div>
-
-                    <div class="menu-row clearfix">
-                        <div class="left">
-                            <input type="checkbox" data-amount="20" /><label class="menu-item">jacket</label>
-                        </div>
-                        <div class="left">
-                            <input type="checkbox" data-amount="20" /><label class="menu-item">blouse</label>
-                        </div>
-                    </div>
-
-                    <div class="menu-row clearfix">
-                        <div class="left">
-                            <input type="checkbox" data-amount="30" /><label class="menu-item">sweater</label>
-                        </div>
-                    </div>
-
-                    <div class="menu-row clearfix menu-spacer">
-
-                    </div>
-
-                    <div class="menu-row clearfix">
-                        <div><p class="menu-header">What type of fabric?</p></div>
-                    </div>
-
-                    <div class="menu-row clearfix">
-                        <input type="checkbox" data-amount="5" /><label class="menu-item">Sytnetic</label>
-                    </div>
-
-                    <div class="menu-row clearfix">
-                        <input type="checkbox" data-amount="10" /><label class="menu-item">Cotton</label>
-                    </div>
-
-                    <div class="menu-row clearfix">
-                        <input type="checkbox" data-amount="15" /><label class="menu-item">Silk</label>
-                    </div>
-
-                    <div class="menu-row clearfix">
-                        <input type="checkbox" data-amount="20" /><label class="menu-item">Wool/cashmere/alpaca</label>
-                    </div>
-
-                    <div class="menu-row clearfix">
-                        <input type="checkbox" data-amount="25" /><label class="menu-item">Linen/hemp</label>
-                    </div>
-
-                    <div class="menu-row clearfix">
-                        <input type="checkbox" data-amount="30" /><label class="menu-item">Other:</label><input type="text" />
-                    </div>
-
-                    <div class="menu-row clearfix menu-spacer">
-
-                    </div>
-
-                    <div class="menu-row clearfix">
-                        <div><p class="menu-header">What service would you like?</p></div>
-                    </div>
-
-
-                    <div class="menu-row clearfix">
-                        <input type="checkbox" data-amount="15" /><label class="menu-item">Rust dye</label>
-                    </div>
-
-                    <div class="menu-row clearfix">
-                        <input type="checkbox" data-amount="10" /><label class="menu-item">Or</label>
-                        <input type="checkbox" data-amount="20" /><label class="menu-item">And</label>
-                    </div>
-
-                    <div class="menu-row clearfix">
-                        <input type="checkbox" data-amount="25" /><label class="menu-item">Indigo dye</label>
-                    </div>
-
-                    <div class="menu-row clearfix">
-                        <input type="checkbox" data-amount="10" /><label class="menu-item">Or</label>
-                        <input type="checkbox" data-amount="20" /><label class="menu-item">And</label>
-                    </div>
-
-                    <div class="menu-row clearfix">
-                        <input type="checkbox" data-amount="15" /><label class="menu-item">Embroidery</label>
-                    </div>
-
-                    <div class="menu-row clearfix">
-                        <label class="menu-item">How involved:</label>
-                    </div>
-
-                    <div class="menu-row clearfix">
-                        <div class="left">
-                            <button>Purchase</button>
-                        </div>
-                        <div class="right">
-                            <div>
-                                <label class="menu-item">Total:</label>
-                                <p id="menu-total"></p>
+                        <div class="menu-row clearfix">
+                            <div class="left">
+                                <input type="checkbox" data-amount="0" /><label class="menu-item">request a mailer</label>
+                            </div>
+                            <div class="right">
+                                <input type="checkbox" data-amount="0" /><label class="menu-item">schedule a pick up in NYC</label>
                             </div>
                         </div>
+
+                        <div class="menu-row clearfix">
+                            <div><p class="menu-header">What item are you servicing?</p></div>
+                        </div>
+
+                        <div class="menu-row clearfix">
+                            <div class="left">
+                                <input type="checkbox" data-amount="10" /><label class="menu-item">t shirt</label>
+                            </div>
+                            <div class="left">
+                                <input type="checkbox" data-amount="10" /><label class="menu-item">thermal</label>
+                            </div>
+                        </div>
+
+                        <div class="menu-row clearfix">
+                            <div class="left">
+                                <input type="checkbox" data-amount="20" /><label class="menu-item">jacket</label>
+                            </div>
+                            <div class="left">
+                                <input type="checkbox" data-amount="20" /><label class="menu-item">blouse</label>
+                            </div>
+                        </div>
+
+                        <div class="menu-row">
+                            <input type="checkbox" data-amount="30" /><label class="menu-item">sweater</label>
+                        </div>
+
+                        <div class="menu-row clearfix empty-row">
+                            <label></label>
+                        </div>
+
+                        <div class="menu-row clearfix">
+                            <div><p class="menu-header">What type of fabric?</p></div>
+                        </div>
+
+                        <div class="menu-row clearfix">
+                            <input type="checkbox" data-amount="5" /><label class="menu-item">Sytnetic</label>
+                        </div>
+
+                        <div class="menu-row clearfix">
+                            <input type="checkbox" data-amount="10" /><label class="menu-item">Cotton</label>
+                        </div>
+
+                        <div class="menu-row clearfix">
+                            <input type="checkbox" data-amount="15" /><label class="menu-item">Silk</label>
+                        </div>
+
+                        <div class="menu-row clearfix">
+                            <input type="checkbox" data-amount="20" /><label class="menu-item">Wool/cashmere/alpaca</label>
+                        </div>
+
+                        <div class="menu-row clearfix">
+                            <input type="checkbox" data-amount="25" /><label class="menu-item">Linen/hemp</label>
+                        </div>
+
+                        <div class="menu-row">
+                            <input type="checkbox" data-amount="30" /><label class="menu-item">Other:</label><input type="text" />
+                        </div>
+
+                        <div class="menu-row clearfix empty-row">
+                            <label></label>
+                        </div>
+
+                        <div class="menu-row clearfix">
+                            <div><p class="menu-header">What service would you like?</p></div>
+                        </div>
+
+
+                        <div class="menu-row clearfix">
+                            <input type="checkbox" data-amount="15" /><label class="menu-item">Rust dye</label>
+                        </div>
+
+                        <div class="menu-row clearfix menu-left-indent">
+                            <input type="checkbox" data-amount="10" /><label class="menu-item">Or</label>
+                            <input type="checkbox" data-amount="20" /><label class="menu-item">And</label>
+                        </div>
+
+                        <div class="menu-row clearfix">
+                            <input type="checkbox" data-amount="25" /><label class="menu-item">Indigo dye</label>
+                        </div>
+
+                        <div class="menu-row clearfix menu-left-indent">
+                            <input type="checkbox" data-amount="10" /><label class="menu-item">Or</label>
+                            <input type="checkbox" data-amount="20" /><label class="menu-item">And</label>
+                        </div>
+
+                        <div class="menu-row clearfix">
+                            <input type="checkbox" data-amount="15" /><label class="menu-item">Embroidery</label>
+                        </div>
+
+                        <div class="menu-row clearfix">
+                            <label class="menu-item">How involved:</label>
+                        </div>
+
+                        <div class="menu-row clearfix menu-left-indent">
+                            <input type="checkbox" data-amount="0" /><label class="menu-item">Surprise me</label>
+                        </div>
+
+                        <div class="menu-row clearfix menu-left-indent">
+                            <input type="checkbox" data-amount="0" /><label class="menu-item">Suggestion:</label><input type="text" />
+                        </div>
+
+                        <div class="menu-row clearfix">
+                            <div id="menu-order-button-container" class="left">
+                                <button class="btn btn-sustained btn-large">Purchase</button>
+                            </div>
+                            <div id="menu-order-total-container" class="right">
+                                <div>
+                                    <label class="menu-item left">Total:</label>
+                                    <p id="menu-total" class="left">$0</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="menu-row clearfix">
-
-                    </div>
+                    <div class="clear"></div>
                 </div>
             </div>
         </div> <!-- /menu-container -->
 
-        <div id="signup-container">
+        <div name="signup" id="signup-container" class="clearfix">
             <div>
-                <h3>Live in NYC?</h3>
+                <h3 class="text-notransform">Live in NYC?</h3>
 
                 <div>
-                    <input type="text" placeholder="YOUR EMAIL" /> <button class="btn btn-primary">Sign up</button>
+                    <input type="text" placeholder="YOUR EMAIL" /> <button class="btn btn-sustained btn-large">Sign up</button>
                 </div>
 
-                <h3>to be invited to our events</h3>
+                <h3 class="text-notransform">to be invited to our events</h3>
             </div>
         </div> <!-- /signup-container -->
 
         <div id="insta-container">
             <div>
                 <div>
-                    <img src="" />
+                    <img id="insta-logo" src="/static/images/Instagram.png" />
                 </div>
                 <a href=""><p>@projectsustained</p></a>
             </div>
 
-            <div>
+            <div id="insta-images-container">
                 <div>
-                    <img src="" />
-                    <img src="" />
+                    <img src="https://instagram.ford4-1.fna.fbcdn.net/t51.2885-15/e35/14591145_1312891648762010_2995089280587530240_n.jpg?ig_cache_key=MTM5NTgwNDgwMTk5MjYwMDI5NA%3D%3D.2" />
+                    <img src="https://instagram.ford4-1.fna.fbcdn.net/t51.2885-15/e35/14591145_1312891648762010_2995089280587530240_n.jpg?ig_cache_key=MTM5NTgwNDgwMTk5MjYwMDI5NA%3D%3D.2" />
                 </div>
 
                 <div>
-                    <img src="" />
-                    <img src="" />
+                    <img src="https://instagram.ford4-1.fna.fbcdn.net/t51.2885-15/e35/14591145_1312891648762010_2995089280587530240_n.jpg?ig_cache_key=MTM5NTgwNDgwMTk5MjYwMDI5NA%3D%3D.2" />
+                    <img src="https://instagram.ford4-1.fna.fbcdn.net/t51.2885-15/e35/14591145_1312891648762010_2995089280587530240_n.jpg?ig_cache_key=MTM5NTgwNDgwMTk5MjYwMDI5NA%3D%3D.2" />
                 </div>
             </div>
         </div> <!-- /insta-container -->
+
+        <div name="natural-dye-laboratory" id="ndl-container" class="clearfix">
+            <div>
+                <h2>Project Sustained</h2>
+                <h2>Natural Dye Laboratory</h2>
+
+                <div id="ndl-text-container">
+                    <p>we are experimenting with natural dye techniques in Bed Stuy, Brooklyn</p>
+                    <p>working towards collaborative tools with ethical designers</p>
+                </div>
+
+            </div>
+        </div> <!-- /ndl-container -->
+
+        <div name="about-us" id="about-us-container" class="clearfix">
+            <div>
+                <h1>Future Culture</h1>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+
+                <img src="" />
+            </div>
+
+            <div>
+                <img src="/static/images/community_os_header.png" />
+            </div>
+        </div> <!-- /ndl-container -->
 
     </div> <!-- /container -->
 

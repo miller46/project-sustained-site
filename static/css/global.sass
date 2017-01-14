@@ -1,26 +1,36 @@
 $font-stack:    Helvetica, sans-serif
 $primary-color: #10244F
 $accent-color: #8EC4F9
+$secondary-accent-color: #FFEA00
 
 $menu-border-color: #CCCCCC
 
 $dark-text-color: #444
 
 
-$cta-button-height: 80px
-$cta-button-width: 120px
+$small-button-height: 80px
+$small-button-width: 120px
 
 $info-bullet-height: 100px
 
 $info-bullet-number-inner-radius: 52px
 
 $menu-order-item-line-height: 10px
+$menu-order-margin-left: 32px
 
 $font: 'sustained-font'
+$accent-font: "kohinoor devanagari"
 
 @font-face
     font-family: $font
     src: url('../fonts/TsukuBRdGothic-Bold.ttf')
+
+html, body
+    width: 100%
+    height: 100%
+    margin: 0
+    padding: 0
+    overflow-x: hidden
 
 body
     font-family: "Tsukushi B Round Gothic"
@@ -33,6 +43,7 @@ div#main-container
     width: 100%
     padding: 0
     background: url('../images/sustained_background.png')
+    background-size: 100%
 
 /* */
 
@@ -108,20 +119,15 @@ div#splash-cta-container > div
     margin: 0 auto
 
 div#splash-cta-container button
-    height: $cta-button-height
-    width: $cta-button-width
-    padding-left: 24px
-    padding-bottom: 16px
-    -webkit-transform: rotate(-10deg)
     margin-top: -20px
 
 div#splash-cta-container button:active
     margin-top: -18px
 
 p.see-more-label
-    font-family: "kohinoor devanagari"
+    font-family: $accent-font
     color: $dark-text-color
-
+    font-weight: lighter
 
 /* */
 
@@ -138,6 +144,7 @@ div#info-bullets-container
 p#info-header-first
     color: #F41B1B
     font-size: 18px
+    margin-bottom: 0
 
 p#info-header-second
     font-size: 20px
@@ -203,11 +210,6 @@ p.display-stack
 @media (max-width: 720px)
     line-height: 50px
 
-div#info-sub-row button
-    height: 120px
-    width: 350px
-    background-size: 70%
-
 div#info-sub-row > div.right
     margin-left: -80px
 
@@ -223,15 +225,62 @@ p#info-sub-row-label
 div#menu-container
     width: 100%
 
+div#menu-gamble-container
+    background: url('../images/red_stars.png')
+    background-position-x: 16px
+    background-position-y: 16px
+    margin: 80px
+    padding-bottom: 8px
+
+div#menu-gamble-container button, div#menu-gamble-container button:active
+    margin-left: -80px
+
+div#menu-gamble-container > div
+    margin-left: 64px
+
+div#menu-gamble-sub-container
+    background: $primary-color
+    text-align: right
+    padding: 16px 4px 4px 16px
+    margin-bottom: 16px
+
+div#menu-gamble-sub-container p
+    color: $secondary-accent-color
+    margin-bottom: 0
+    font-family: "Heiti SC"
+    font-weight: normal
+
 div#menu-order-container
     background: url('../images/menu_background.png')
     border: 1px solid $menu-border-color
-    padding-left: 24px
     max-width: 100%
-    width: 500px
+    position: relative
 
-div#menu-order-container > div
+div#menu-order-button-container
+    position: relative
+
+div#menu-order-container button
+    position: absolute
+    margin-top: -10px
+    border: 0
+
+@media (min-width: 500px)
+    div#menu-order-container
+        width: 500px
+
+div#menu-order-container > div:nth-child(1)
     border-left: 1px solid $menu-border-color
+    position: absolute
+    left: $menu-order-margin-left
+    top: 0
+    height: 100%
+
+div#menu-order-total-container
+    background-color: $accent-color
+    padding-left: 16px
+    padding-top: 8px
+    padding-right: 8px
+    width: 150px
 
 p#menu-title
     text-transform: uppercase
@@ -244,43 +293,139 @@ p#menu-title
 p.menu-header
     clear: both
     text-transform: none
-    margin-bottom: 1px
+    margin-bottom: 4px
 
 p#menu-total
-    font-size: 20px
+    font-size: 32px
+    margin-top: 8px
+    margin-left: 8px
 
 div.menu-row
     border-bottom: 1px solid $menu-border-color
     width: 100%
     line-height: $menu-order-item-line-height
+    padding-left: $menu-order-margin-left
+    padding-right: 12px
+    margin-top: -8px
+
+div.menu-row input[type='text']
+    height: 20px
+
+div.empty-row
+    line-height: 23px
+    margin: 0
+
+.menu-left-indent input[type='checkbox']
+    margin-left: 48px !important
 
 div.menu-row label
     margin-bottom: 1px
 
+div.menu-row > label
+    margin-left: 4px
+    margin-bottom: 4px
+
+div.menu-row input[type='checkbox']
+    margin: 4px
+
 div.menu-spacer
     line-height: $menu-order-item-line-height
+
+@media(max-width: 500px)
+    div#menu-order-container button
+        background: url('../images/button_small_background.png') !important
+        background-repeat: no-repeat
+        height: $small-button-height
+        width: $small-button-width
+        padding-left: 24px
+        padding-bottom: 16px
 
 /* */
 
 /**  Insta */
 
 div#insta-container
-    background: #0F254E
-    width: 500px
+    background: rgba(15, 37, 78, 0.84)
+    width: 660px
     max-width: 100%
     padding: 32px
     text-align: center
-    margin: auto
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 128px
+
+div#insta-container img
+    height: 256px
+    width: 256px
+    padding: 8px
+
+div#insta-container img#insta-logo
+    width: 128px
+    height: 64px
+
+div#insta-container a
+    color: #FFFFFF
+
+div#insta-images-container
+    margin-top: 64px
+    margin-bottom: 64px
+
 
 /* */
 
 /** Signup */
 
 div#signup-container
+    width: 100%
     margin: 32px
-    height: 400px
     text-align: center
     padding-top: 150px
+    margin-bottom: 128px
+
+div#signup-container h3
+    margin-bottom: 64px
+    font-size: 60px
+    color: $dark-text-color
+    font-family: $accent-font
+    font-weight: lighter
+
+div#signup-container input
+    width: 300px
+    padding: 8px
+    border: 4px solid rgba(15, 37, 78, 0.6)
+    background: rgba(120, 175, 220, 0.6)
+    color: $primary-color
+
+@media (max-width: 756px)
+    div#signup-container
+        width: auto
+
+/* */
+
+/** Natural Dye Laboratory ndl */
+
+div#ndl-container
+    background: url('../images/dye_lab_background.png')
+    width: 100%
+    height: 100vh
+
+div#ndl-container h2
+    margin: 16px
+    text-transform: uppercase
+    font-weight: bold
+
+div#ndl-text-container
+    background: rgba(255, 255, 255, 0.77)
+    text-align: center
+    float: right
+    margin-top: 300px
+    padding: 16px
+    margin-right: 16px
+
+div#ndl-text-container p
+    font-weight: bold
+    margin-bottom: 0
+
 
 /* */
 
@@ -288,9 +433,22 @@ div#signup-container
 
 .btn-small
     background: url('../images/button_small_background.png') !important
+    background-repeat: no-repeat
+    height: $small-button-height
+    width: $small-button-width
+    padding-left: 24px
+    padding-bottom: 16px
 
 .btn-small.active
     background: url('../images/button_small_background.png') !important
+    background-repeat: no-repeat
+
+.btn-large
+    width: 350px
+    height: 120px
+    background-size: 70% !important
+    background-repeat: no-repeat
+    background-position: center
 
 .btn-sustained
     background: url('../images/button_background.png')
@@ -300,11 +458,14 @@ div#signup-container
     -webkit-transform: rotate(-5deg)
 
 .btn-sustained:hover
+    background-position: center
     color: $accent-color
 
 .btn-sustained:active
     background: url('../images/button_background.png')
     background-position: top -4px
+    background-repeat: no-repeat
+    background-position: center
 
 /* */
 
